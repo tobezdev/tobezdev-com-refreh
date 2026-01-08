@@ -374,3 +374,32 @@ h4 {
 p {
     color: var(--muted);
 }
+
+div.social-icons {
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+    font-size: 1.5rem;
+    color: var(--muted);
+    align-self: flex-end;
+}
+
+.social-icons a {
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+    font-size: 1.5rem;
+    color: var(--muted);
+    text-decoration: none;
+}
+
+.social-icons a i {
+    transition: color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.social-icons a i:hover {
+    color: var(--primary);
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-2px);
+}
