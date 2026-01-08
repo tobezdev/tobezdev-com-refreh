@@ -88,8 +88,8 @@ section#nav nav {
 
 div.nav-links {
     display: flex;
-    align-items: flex-end;
-    align-items: right;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-links {
@@ -335,8 +335,13 @@ footer {
 
     section#nav {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 6px;
+    }
+
+    section#nav nav {
+        justify-content: center;
+        width: 100%;
     }
 
     section#nav a {
@@ -347,6 +352,45 @@ footer {
         display: inline;
         margin: 0;
         color: #6b7280;
+    }
+
+    .company-row {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .date-badge {
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        white-space: nowrap;
+        width: max-content;
+        min-width: 240px;
+        text-align: center;
+        padding: 4px 14px;
+    }
+
+    .card {
+        padding-top: 56px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    div.footer-left,
+    div.footer-right {
+        text-align: left;
+        width: 100%;
+    }
+
+    div.footer-left {
+        padding-bottom: 25px;
     }
 }
 
