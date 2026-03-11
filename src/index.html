@@ -13,144 +13,187 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Home - tobezdev.com</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+		rel="stylesheet" />
 	<link rel="stylesheet" href="./static/global.css" />
 </head>
 
 <body>
-	<section id="nav">
+	<header>
 		<nav>
+			<span class="nav-brand">tobezdev</span>
 			<div class="nav-links">
 				<a href="#top">Home</a>
 				<a href="#experience">Experience</a>
 				<a href="#contact">Contact</a>
+				<p>&bullet;</p>
+				<a id="navbar-other-pages-hover-btn">Other Pages</a>
+			</div>
+			<div id="navbar-other-pages-dropdown" class="dropdown-content">
+				<p class="dropdown-header">Audius Pages</p>
+				<a href="https://sotd.audius.tobezdev.com/" target="_blank" rel="noopener noreferrer">Audius Song of the Day</a>
+				<a href="https://whm.audius.tobezdev.com/" target="_blank" rel="noopener noreferrer">Celebrating Women's History Month</a>
+
 			</div>
 		</nav>
-	</section>
-	<section id="top">
-		<h1>Hey, I'm tobezdev.</h1>
-		<p>
-			I code, make music, and play various games. You can see more
-			about what I do in the sections below, I hope you enjoy your
-			stay!
-		</p>
-	</section>
-	
-	<iframe src=https://audius.co/embed/track/remixify/eon-audius-exclusive?flavor=compact width="100%" height="120" allow="encrypted-media" style="border: none;"></iframe>
+	</header>
 
-	<section id="experience">
-		<h2>Experience</h2>
-		<div class="cards">
-			<article class="card">
-				<div class="card-head">
-					<div class="company-row">
-						<img src="./assets/audius-logo-nobg.webp" alt="Audius Logo"
-							class="company-logo company-hero logo-idle" />
-						<a class="company-link" href="https://audius.co/" target="_blank" rel="noopener">
-							Audius
-						</a>
-					</div>
-					<span class="role-title">Hype Squad</span>
-					<span class="date-badge">Jul 2025 &ndash; Present</span>
+	<main>
+		<section id="top" class="hero">
+			<div class="hero-glow"></div>
+			<div class="hero-glow hero-glow-2"></div>
+			<div class="hero-content">
+				<h1>Hey, I'm <span class="brand-accent">tobezdev</span>.</h1>
+				<br />
+				<div class="hero-status">
+					<span class="status-dot-grn"></span>
+					<a href="#contact"><span>Available for Commissions - contact for more info!</span></a>
 				</div>
-				<p>
-					Hype Squad is a fancy way of saying 'Community Manager'
-					- my roles here mainly consist of providing support to
-					those who may need it, and to keep artists engaged with
-					the platform. I've also assisted in some development
-					aspects of the platform, including the website, custom
-					$AUDIO Bot and the blockchain.
-				</p>
-			</article>
+			</div>
+		</section>
 
-			<article class="card">
-				<div class="card-head">
-					<div class="company-row">
-						<img src="./assets/swr-logo-nobg.png" alt="South Western Railway Logo"
-							class="company-logo company-hero logo-idle" />
-						<a class="company-link" href="https://southwesternrailway.com/" target="_blank" rel="noopener">
-							South Western Railway
-						</a>
-					</div>
-					<span class="role-title">Gateline & Platform Operations Assistant</span>
-					<span class="date-badge">Jun 2025 &ndash; Sept 2025</span>
-				</div>
-				<p>
-					I help passengers have a smooth and stress-free journey
-					&mdash; answering questions, giving travel advice, and
-					helping with tickets or self-service machines. I'm there
-					to keep things running smoothly around the station, make
-					sure everyone feels welcome, and help sort out any small
-					issues before they become big ones. It's all about good
-					vibes, clear info, and great customer service.
-				</p>
-			</article>
+		<div class="divider"></div>
 
-			<article class="card">
-				<div class="card-head">
-					<div class="company-row">
-						<img src="./assets/curity-logo.jpeg" alt="Curity Logo"
-							class="company-logo company-hero logo-idle" />
-						<a class="company-link" href="https://curity.io/" target="_blank" rel="noopener">
-							Curity
-						</a>
+		<section id="experience">
+			<h2>Experience</h2>
+			<div class="experience-list">
+				<article class="experience-row">
+					<div class="exp-header">
+						<div class="company-row">
+							<img src="./assets/audius-logo-nobg.webp" alt="Audius Logo" class="company-logo" />
+							<div class="company-info">
+								<a class="company-link" href="https://audius.co/" target="_blank"
+									rel="noopener">Audius</a>
+								<span class="role-title">Community Manager & Artist Relations</span>
+							</div>
+						</div>
+						<span class="date-badge active">Jul 2025 &ndash; Present</span>
 					</div>
-					<span class="role-title">Security Development Partner</span>
-					<span class="date-badge">Apr 2024 &ndash; Jun 2025</span>
-				</div>
-				<p>
-					The complex security analysis for this position were
-					challenging, but allowed Curity to provide a live feed
-					for various types of security vulnerabilities to
-					businesses before they could be exploited by malicious
-					actors.
-				</p>
-			</article>
+					<p>
+						Community management, user support, and artist engagement for a decentralised music platform. Also contributed to platform development
+						including the website, a custom $AUDIO Discord bot, and blockchain tooling.
+					</p>
+					<div class="skill-tags">
+						<span class="tag">Community</span>
+						<span class="tag">Web3</span>
+						<span class="tag">Blockchain</span>
+					</div>
+				</article>
+
+				<article class="experience-row">
+					<div class="exp-header">
+						<div class="company-row">
+							<img src="./assets/swr-logo-nobg.png" alt="South Western Railway Logo"
+								class="company-logo" />
+							<div class="company-info">
+								<a class="company-link" href="https://southwesternrailway.com/" target="_blank"
+									rel="noopener">South Western Railway</a>
+								<span class="role-title">Gateline &amp; Platform Operations Assistant</span>
+							</div>
+						</div>
+						<span class="date-badge">Jun 2025 &ndash; Sept 2025</span>
+					</div>
+					<p>
+						Front-line passenger assistance &mdash; ticketing, travel advice, and station operations. Ensured smooth service delivery
+						and resolved customer issues in a fast-paced environment.
+					</p>
+					<div class="skill-tags">
+						<span class="tag">Customer Service</span>
+						<span class="tag">Operations</span>
+						<span class="tag">Travel</span>
+					</div>
+				</article>
+
+				<article class="experience-row">
+					<div class="exp-header">
+						<div class="company-row">
+							<img src="./assets/curity-logo.jpeg" alt="Curity Logo" class="company-logo" />
+							<div class="company-info">
+								<a class="company-link" href="https://curity.io/" target="_blank"
+									rel="noopener">Curity</a>
+								<span class="role-title">Security Development Partner</span>
+							</div>
+						</div>
+						<span class="date-badge">Apr 2024 &ndash; Jun 2025</span>
+					</div>
+					<p>
+						Performed security vulnerability analysis and helped deliver real-time threat intelligence feeds to enterprise clients.
+					</p>
+					<div class="skill-tags">
+						<span class="tag">Security</span>
+						<span class="tag">Vulnerability Analysis</span>
+						<span class="tag">Python</span>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<div class="divider"></div>
+
+		<section id="projects">
+			<h2>Projects</h2>
+			<div class="projects-grid">
+				<a href="https://sotd.audius.tobezdev.com/" target="_blank" rel="noopener noreferrer" class="project-card">
+					<div class="project-info">
+						<h3>Audius Song of the Day</h3>
+						<p>A Discord app showcasing a new song from the Audius platform every day, built with py-cord and the Audius API.</p>
+					</div>
+				</a>
+			</div>
+		</section>
+
+		<div class="divider"></div>
+
+		<section id="contact">
+			<h2>Let's Connect</h2>
+			<div class="contact-grid">
+				<a href="mailto:toby@tobezdev.com" class="contact-card">
+					<span class="contact-icon">&#9993;</span>
+					<span class="contact-card-value">toby@tobezdev.com</span>
+				</a>
+				<a href="https://linkedin.com/in/tobezdev" target="_blank" class="contact-card">
+					<img src="https://iili.io/q5eoXgR.md.png" alt="LinkedIn" class="contact-icon-img" />
+					<span class="contact-card-value">/in/tobezdev</span>
+				</a>
+				<a href="https://discordapp.com/users/969254887621820526" target="_blank" class="contact-card">
+					<img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e3d7f4ef6498ac018f2c55_Symbol.svg" alt="Discord" class="contact-icon-img" />
+					<span class="contact-card-value">@tobezdev</span>
+				</a>
+			</div>
+		</section>
+
+		<div class="divider"></div>
+
+		<section id="disclaimer">
+			<p class="disclaimer-text">
+				Some assets on this page are copyright protected and are used with
+				explicit written permission from the copyright owner(s) &mdash; please
+				consult the asset copyright owner for permission before using any
+				assets on this page.
+			</p>
+		</section>
+	</main>
+
+	<footer>
+		<div class="footer-left">
+			<p>&copy; 2023-present tobezdev.com. All rights reserved.</p>
+			<p>Website design &amp; development by tobezdev.</p>
 		</div>
-	</section>
-
-	<section id="contact">
-		<h2>Contact</h2>
-		<p>
-			Have a question or want to get in touch? Feel free to reach out!
-		</p>
-		<ul class="list">
-			<li>
-				Email:
-				<a href="mailto:toby@tobezdev.com">toby@tobezdev.com</a>
-			</li>
-			<li>
-				Discord:
-				<a href="https://discordapp.com/users/969254887621820526" target="_blank">@tobezdev</a>
-			</li>
-		</ul>
-	</section>
+		<div class="footer-right">
+			<script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+			<script type="text/javascript">
+				kofiwidget2.init(
+					"Support my work &mdash; powered by Ko-fi.com",
+					"#171717",
+					"J3J311REZX"
+				);
+				kofiwidget2.draw();
+			</script>
+		</div>
+	</footer>
+	<script src="./static/navbarOtherPages.js"></script>
 </body>
-<section>
-	<h4>Copyright Disclaimer</h4>
-	<p>
-		Some assets on this page are copyright protected and are used with
-		explicit written permission from the copyright owner(s) - please
-		consult the asset copyright owner for permission before using any
-		assets on this page.
-	</p>
-</section>
-<footer>
-	<div class="footer-left">
-		<p>&copy; 2023-present tobezdev.com. All rights reserved.</p>
-		<p>Website design & development by tobezdev.</p>
-		<b>
-	</div>
-	<div class="footer-right">
-		<script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
-		<script type="text/javascript">
-			kofiwidget2.init(
-				"Support my work &mdash; powered by Ko-fi.com",
-				"#72a4f2",
-				"J3J311REZX"
-			);
-			kofiwidget2.draw();
-		</script>
-	</div>
-</footer>
 
 </html>
